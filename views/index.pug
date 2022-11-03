@@ -3,15 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to the #{title} <br>
-    button(type = "button", class = "btn btn-success", onClick = "doBump()") Press Me
-    div(id = "bump") Bump the count
-    a(href="bird") Bird
+    button(type='button',class='btn btn-warning' onClick="doBump()") Press Me
+    div(id="bump") Bump the count
+    a(href="monkeyanimal") MonkeyAnimal
     script.
-      let count = 0
-      let bump = 1
+      let count =0
+      let bump=1
       function doBump(){
-        count = bump
-        bump = bump + 1
-        document.getElementById('bump').innerHTML = `Count ${count} with bump ${bump}`
-      }
+        count=count+bump 
+        bump=bump+1 
+        document.getElementById('bump').innerHTML=`count ${count} with bump ${bump}`
 
+      }
